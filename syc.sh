@@ -1,0 +1,2 @@
+# zsh:
+rm zsh/zshrc
