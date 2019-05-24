@@ -25,7 +25,7 @@ My Dotfiles
 
 ## i3-gaps
 ![i3wm](https://i.imgur.com/XooeFi8.png)
-This is from [@fikriomar16](https://github.com/fikriomar16) who really inspire me.
+This is the screenshot from [@fikriomar16](https://github.com/fikriomar16) who really inspires me.
 
 ## License
 The code is available under the [GPL License](https://github.com/AlessandroChen/dotfiles/blob/master/LICENSE.md)
