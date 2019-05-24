@@ -4,9 +4,9 @@ inoremap jj <esc>
 nnoremap <space>a za
 nnoremap <leader><space> :nohlsearch<CR>
 
-nnoremap <leader>em :vsp ~/.vim/rc/mappings.vim<CR>
-nnoremap <leader>ef :vsp ~/.vim/rc/functions.vim<CR>
-nnoremap <leader>ep :vsp ~/.vim/plugged.vim<CR>
+nnoremap <leader>em :vsp ~/.dotfiles/vim/mappings.vim<CR>
+nnoremap <leader>ef :vsp ~/.dotfiles/vim/functions.vim<CR>
+nnoremap <leader>ep :vsp ~/.dotfiles/vim/plugged.vim<CR>
 nnoremap <leader>sv :source ~/.vimrc<CR>
 
 " Key Bindings " move vertically by visual line
@@ -45,5 +45,7 @@ nmap <leader>tm :tabmove
 map <F9> : call Compile() <CR>
 map <F5> : call Debug() <CR>
 map <F6> : call Run() <CR>
+
+iabbrev xtime <c-r>=strftime("%Y-%m-%d %H:%M:%S")<cr>
 
 
