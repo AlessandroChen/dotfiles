@@ -18,7 +18,7 @@ set laststatus=2        " for lightline
 filetype indent on      " load filetype-specific indent files
 
 " Leader Shortcut
-let mapleader=","       " leader is comma
+let mapleader=','       " leader is comma
 inoremap jj <esc>
 
 " Searching
@@ -96,39 +96,39 @@ syntax enable            " enable syntax processing
 
 " Functions
 function Compile()
-	if &filetype == 'cpp'
+	if &filetype ==# 'cpp'
 		exec "!g++ % -o %< -g -Wall -Wextra -Wconversion -std=c++11"
-	elseif &filetype == 'c'
+	elseif &filetype ==# 'c'
 		exec "!gcc % -o %< -g -Wall -Wextra -Wconversion"
-	elseif &filetype == 'tex'
+	elseif &filetype ==# 'tex'
 		exec "!xelatex '%'"
-	elseif &filetype == 'java'
+	elseif &filetype ==# 'java'
 		exec "!javac %"
 	endif
 endfunction
 
 function Debug()
-	if &filetype == 'cpp' 
+	if &filetype ==# 'cpp' 
 		exec "!lldb ./%<"
-	elseif &filetype == 'tex'
+	elseif &filetype ==# 'tex'
 		exec "!open './%<.pdf'"
-	elseif &filetype == 'java'
+	elseif &filetype ==# 'java'
 		exec "!jdb %<"
 	endif
 endfunction
 
 function Run()
-	if &filetype == 'cpp'
+	if &filetype ==# 'cpp'
 		exec "!time ./%<"
-	elseif &filetype == 'tex'
+	elseif &filetype ==# 'tex'
 		exec "!open -a Preview.app './%<.pdf'"
-	elseif &filetype == 'java'
+	elseif &filetype ==# 'java'
 		exec "!java %<"
-	elseif &filetype == 'html'
+	elseif &filetype ==# 'html'
 		exec "!firefox %"
-	elseif &filetype == 'php'
+	elseif &filetype ==# 'php'
 		exec "!php %"
-	elseif &filetype == 'sh'
+	elseif &filetype ==# 'sh'
 		exec "!bash %"
 	endif
 endfunction
