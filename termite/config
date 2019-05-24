@@ -11,6 +11,7 @@ clickable_url = true
 #font = Courier 10 Pitch 13.5
 #font = DejaVu Sans Mono for Powerline 11
 font = DejaVuSansMono Nerd Font 12
+#font = Hack Nerd Font Mono 12
 #font = Source Code Pro,Source Code Pro ExtraLight:style=ExtraLight Italic,Italic
 scrollback_lines = 10000
 search_wrap = true
