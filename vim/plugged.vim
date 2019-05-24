@@ -20,5 +20,6 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'w0rp/ale'
+Plug 'mzlogin/vim-markdown-toc'
 
 call plug#end()
