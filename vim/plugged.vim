@@ -16,7 +16,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.vim/plugged/gocode/vim/symlink.sh' }
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'w0rp/ale'
