@@ -47,7 +47,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec gnome-terminal
 
 # start a web browser
-bindsym $mod+w exec firefox
+#bindsym $mod+w exec firefox
 
 # file manager
 bindsym $mod+f exec pcmanfm
@@ -147,7 +147,7 @@ bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
 # Open applications on specific workspaces
-assign [class='netease-cloud-music'] $ws10
+assign [class=netease-cloud-music] $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+BackSpace reload
@@ -225,5 +225,6 @@ for_window [class=Gnome-terminal] floating enable
 #for_window [class=Firefox] floating enable
 for_window [class=Pcmanfm] floating enable
 for_window [class=Audacious] floating enable
+for_window [class=netease-cloud-music] floating enable
 for_window [class=Gpicview|Ristretto|feh] floating enable border pixel 0
 #for_window [class=".*"] floating enable
