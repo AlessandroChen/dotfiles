@@ -14,6 +14,7 @@ general {
 # order += "ipv6"
 order += "cpu_usage"
 order += "cpu_temperature 0"
+order += "disk /"
 # order += "run_watch DHCP"
 # order += "run_watch VPN"
 # order += "wireless _first_"
@@ -55,6 +56,14 @@ tztime local {
 load {
     format = "%1min"
 }
+
+disk "/" {
+	format = " %avail"
+	prefix_type	= custom
+	low_threshold = 20
+	threshold_type = percentage_avail
+}
+
 
 volume master {
     format = " %volume"
