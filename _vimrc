@@ -1,6 +1,3 @@
-" Plug-ins
-source ~/.vim/plugins.vim
-
 cd ~/Code/
 
 " Spaces & tabs
